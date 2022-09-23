@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.3.4",
+    "@nativescript/core": "~8.3.5",
     "@nativescript/theme": "~3.0.2",
-    "@utls/undom-ef": "^0.3.8",
-    "dominative": "^0.0.4-alpha.0",
-    "ef-core": "^0.15.3"
+    "@utls/undom-ef": "^0.3.9",
+    "dominative": "^0.0.4-alpha.1",
+    "ef-core": "^0.15.5"
   },
   "devDependencies": {
     "@nativescript/android": "8.3.1",

@@ -7,7 +7,7 @@
     "@nativescript/core": "~8.3.5",
     "@nativescript/theme": "~3.0.2",
     "@utls/undom-ef": "^0.4.3",
-    "dominative": "^0.0.4-alpha.7",
+    "dominative": "^0.0.4-alpha.8",
     "ef-core": "^0.15.5"
   },
   "devDependencies": {

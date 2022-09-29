@@ -6,13 +6,11 @@
   "dependencies": {
     "@nativescript/core": "~8.3.5",
     "@nativescript/theme": "~3.0.2",
-    "@utls/undom-ef": "^0.4.3",
-    "dominative": "^0.0.4-alpha.8",
-    "ef-core": "^0.15.5"
+    "@utls/undom-ef": "^0.5.0",
+    "dominative": "^0.0.5-alpha.0",
+    "ef-core": "^0.15.6"
   },
   "devDependencies": {
-    "@nativescript/android": "8.3.1",
-    "@nativescript/ios": "8.3.3",
     "@nativescript/preview-cli": "1.0.1",
     "@nativescript/stackblitz": "0.0.5",
     "@nativescript/webpack": "alpha",

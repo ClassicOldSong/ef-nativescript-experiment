@@ -1,163 +1,160 @@
->Frame#root
-	>Page#page
-		>ActionBar#actionbar
-			#title = Hello, {{name = ef.{N}&}}!
-			>NavigationButton
-				#text = Go Back
-				#android.systemIcon = ic_menu_back
-			>ActionItem
-				@tap = reset
-				#text = Reset
-				#android.position = left
-				#ios.position = right
-				#ios.systemIcon = 24
-		>TabView#tabView
-			%selectedIndex@selectedIndexChange = {{tabSelectedIndex = 0}}
-			>TabViewItem
-				#title = Tab A
-				>ScrollView
-					#col = 0
-					>StackLayout#stack
-						>Label.center
-							%text = Current time is: {{time}}
-						>Button.-primary#button
-							@tap = increment
-							%text = Tap me! You have tapped {{count = 0}} time(s)
-						>TextField
-							#hint = Type your name here!
-							%text@textChange = {{name}}
-						>GridLayout
-							#columns = *, 80, 80
-							>Label
-								#col = 0
-								.Check status: {{checked}}
-							>Switch
-								#col = 1
-								%checked@checkedChange = {{checked = true}}
-							>Switch
-								#col = 2
-								%checked@checkedChange = {{checked}}
-						>StackLayout
-							+views
-						>GridLayout
-							#columns = auto, auto
-							>Button
-								#col = 0
-								@tap = addView
-								.Add View
-							>Button
-								#col = 1
-								@tap = removeView
-								.Remove View
-						>GridLayout
-							#columns = 100, *
-							>Label
-								#col = 0
-								#text = Bar index: {{segmentIndex = 0}}
-							>Slider
-								#col = 1
-								%value@valueChange = {{segmentIndex}}
-								%maxValue = {{sliderMaxValue = 2}}
-						>GridLayout
-							#columns = 100, *
-							>Label
-								#col = 0
-								#text = Using Prop
-							>SegmentedBar#bar1
-								#col = 1
-								%selectedIndex@selectedIndexChange = {{segmentIndex}}
-								>Prop
-									#key = items
-									#type = array
-									>SegmentedBarItem
-										#title = Item 0
-									>SegmentedBarItem
-										#title = Item 1
-									>SegmentedBarItem
-										#title = Item 2
-									+propedBarItems
-						>GridLayout
-							#columns = 100, *
-							>Label
-								#col = 0
-								#text = Direct mount
-							>SegmentedBar#bar2
-								#col = 1
-								%selectedIndex@selectedIndexChange = {{segmentIndex}}
-								>SegmentedBarItem
-									#title = Item 0
-								>SegmentedBarItem
-									#title = Item 1
-								>SegmentedBarItem
-									#title = Item 2
-								+barItems
-						>GridLayout#grid
-							#columns = auto, auto
-							>Button
-								#col = 0
-								@tap = addBarItem
-								.Add Bar Item
-							>Button
-								#col = 1
-								@tap = removeBarItem
-								.Remove Bar Item
-						>Label
-							#textWrap = true
-							>FormattedString
-								>Prop
-									#key = spans
-									#type = array
-									>Span
-										#text = This text has a &
-									>Span.red
-										#text = red &
-										#color = red
-									>Span
-										#text = piece of text. &
-									>Span
-										#text = Also, this bit is italic, &
-										#fontStyle = italic
-									>Span
-										#text = and this bit is bold.
-										#fontWeight = bold
-						>Progress
-							%value = {{progressValue = 20}}
-							%maxValue = {{progressMaxValue = 100}}
-						>Slider
-							%value@valueChange = {{progressValue}}
-							%maxValue = {{progressMaxValue = 100}}
-						>ContentView
-							>Prop
-								#key = content
-								>DatePicker
-						>TimePicker
-			>TabViewItem#tabItem2
-				#title = Tab B
+>ActionBar#actionbar
+	#title = Hello, {{name = ef.{N}&}}!
+	>NavigationButton
+		#text = Go Back
+		#android.systemIcon = ic_menu_back
+	>ActionItem
+		@tap = reset
+		#text = Reset
+		#android.position = left
+		#ios.position = right
+		#ios.systemIcon = 24
+>TabView#tabView
+	%selectedIndex@selectedIndexChange = {{tabSelectedIndex = 0}}
+	>TabViewItem
+		#title = Tab A
+		>ScrollView
+			#col = 0
+			>StackLayout#stack
+				>Label.center
+					%text = Current time is: {{time}}
+				>Button.-primary#button
+					@tap = increment
+					%text = Tap me! You have tapped {{count = 0}} time(s)
+				>TextField
+					#hint = Type your name here!
+					%text@textChange = {{name}}
+				>GridLayout
+					#columns = *, 80, 80
+					>Label
+						#col = 0
+						.Check status: {{checked}}
+					>Switch
+						#col = 1
+						%checked@checkedChange = {{checked = true}}
+					>Switch
+						#col = 2
+						%checked@checkedChange = {{checked}}
 				>StackLayout
-					>SearchBar
-						%text@textChange = {{name}}
-					>Button.-primary
-						@tap = backToA
-						#text = Back to Tab A
-					>GridLayout
-						#height = 60
-						#columns = *, *, *
-						>Button
-							#col = 0
-							@tap = addList
-							#text = Add
-						>Button
-							#col = 1
-							@tap = removeList
-							#text = Remove
-						>Button
-							#col = 2
-							@tap = refreshList
-							#text = Refresh
-					>ListView#listView
-						#items = {{listItems}}
-						#height = 800
-						>ItemTemplate.itemTemplate
-							@createView = createListItem
-							@itemLoading = loadListItem
-
+					+views
+				>GridLayout
+					#columns = auto, auto
+					>Button
+						#col = 0
+						@tap = addView
+						.Add View
+					>Button
+						#col = 1
+						@tap = removeView
+						.Remove View
+				>GridLayout
+					#columns = 100, *
+					>Label
+						#col = 0
+						#text = Bar index: {{segmentIndex = 0}}
+					>Slider
+						#col = 1
+						%value@valueChange = {{segmentIndex}}
+						%maxValue = {{sliderMaxValue = 2}}
+				>GridLayout
+					#columns = 100, *
+					>Label
+						#col = 0
+						#text = Using Prop
+					>SegmentedBar#bar1
+						#col = 1
+						%selectedIndex@selectedIndexChange = {{segmentIndex}}
+						>Prop
+							#key = items
+							#type = array
+							>SegmentedBarItem
+								#title = Item 0
+							>SegmentedBarItem
+								#title = Item 1
+							>SegmentedBarItem
+								#title = Item 2
+							+propedBarItems
+				>GridLayout
+					#columns = 100, *
+					>Label
+						#col = 0
+						#text = Direct mount
+					>SegmentedBar#bar2
+						#col = 1
+						%selectedIndex@selectedIndexChange = {{segmentIndex}}
+						>SegmentedBarItem
+							#title = Item 0
+						>SegmentedBarItem
+							#title = Item 1
+						>SegmentedBarItem
+							#title = Item 2
+						+barItems
+				>GridLayout#grid
+					#columns = auto, auto
+					>Button
+						#col = 0
+						@tap = addBarItem
+						.Add Bar Item
+					>Button
+						#col = 1
+						@tap = removeBarItem
+						.Remove Bar Item
+				>Label
+					#textWrap = true
+					>FormattedString
+						>Prop
+							#key = spans
+							#type = array
+							>Span
+								#text = This text has a &
+							>Span.red
+								#text = red &
+								#color = red
+							>Span
+								#text = piece of text. &
+							>Span
+								#text = Also, this bit is italic, &
+								#fontStyle = italic
+							>Span
+								#text = and this bit is bold.
+								#fontWeight = bold
+				>Progress
+					%value = {{progressValue = 20}}
+					%maxValue = {{progressMaxValue = 100}}
+				>Slider
+					%value@valueChange = {{progressValue}}
+					%maxValue = {{progressMaxValue = 100}}
+				>ContentView
+					>Prop
+						#key = content
+						>DatePicker
+				>TimePicker
+	>TabViewItem#tabItem2
+		#title = Tab B
+		>StackLayout
+			>SearchBar
+				%text@textChange = {{name}}
+			>Button.-primary
+				@tap = backToA
+				#text = Back to Tab A
+			>GridLayout
+				#height = 60
+				#columns = *, *, *
+				>Button
+					#col = 0
+					@tap = addList
+					#text = Add
+				>Button
+					#col = 1
+					@tap = removeList
+					#text = Remove
+				>Button
+					#col = 2
+					@tap = refreshList
+					#text = Refresh
+			>ListView#listView
+				#items = {{listItems}}
+				#height = 800
+				>ItemTemplate.itemTemplate
+					@createView = createListItem
+					@itemLoading = loadListItem

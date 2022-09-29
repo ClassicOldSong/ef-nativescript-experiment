@@ -100,8 +100,10 @@ Application.run({
       app.$data.time = new Date().toLocaleTimeString();
     }, 1000);
 
+    app.$mount({target: document.documentElement})
+
     global.app = app;
-    return app.$refs.root;
+    return document;
   },
 });
 

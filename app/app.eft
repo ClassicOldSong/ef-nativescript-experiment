@@ -157,7 +157,7 @@
 					>ListView#listView
 						#items = {{listItems}}
 						#height = 800
-						>Template.itemTemplate
+						>ItemTemplate.itemTemplate
 							@createView = createListItem
 							@itemLoading = loadListItem
 

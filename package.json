@@ -6,9 +6,9 @@
   "dependencies": {
     "@nativescript/core": "~8.3.5",
     "@nativescript/theme": "~3.0.2",
-    "dominative": "^0.0.5-alpha.2",
+    "dominative": "^0.0.6-alpha.1",
     "ef-core": "^0.15.6",
-    "undom-ng": "^1.0.0"
+    "undom-ng": "^1.0.1"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.1",

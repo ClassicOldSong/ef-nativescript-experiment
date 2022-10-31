@@ -100,7 +100,8 @@ Application.run({
       app.$data.time = new Date().toLocaleTimeString();
     }, 1000);
 
-    app.$mount({target: document.documentElement})
+    document.body.actionBarHidden = false;
+    app.$mount({ target: document.body });
 
     global.app = app;
     return document;

@@ -4,10 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.3.5",
+    "@nativescript/core": "~8.3.6",
     "@nativescript/theme": "~3.0.2",
-    "dominative": "^0.0.6-alpha.5",
-    "ef-core": "^0.15.6",
+    "dominative": "^0.0.6-alpha.8",
+    "ef-core": "^0.16.0",
     "undom-ng": "^1.0.2"
   },
   "devDependencies": {

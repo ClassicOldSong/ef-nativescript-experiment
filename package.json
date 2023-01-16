@@ -4,15 +4,15 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.3.6",
+    "@nativescript/core": "~8.4.4",
     "@nativescript/theme": "~3.0.2",
-    "dominative": "^0.0.7-alpha.2",
-    "ef-core": "^0.16.2",
+    "dominative": "^0.0.7-alpha.4",
+    "ef-core": "^0.16.4",
     "undom-ng": "^1.0.2"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.2",
-    "@nativescript/stackblitz": "0.0.5",
+    "@nativescript/stackblitz": "0.0.6",
     "@nativescript/webpack": "alpha",
     "eft-loader": "^0.14.5",
     "eft-parser": "^0.14.1"

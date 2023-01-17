@@ -4,11 +4,11 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
-    "@nativescript/core": "~8.4.4",
+    "@nativescript/core": "~8.4.5",
     "@nativescript/theme": "~3.0.2",
     "dominative": "^0.0.7-alpha.4",
     "ef-core": "^0.16.4",
-    "undom-ng": "^1.0.2"
+    "undom-ng": "^1.0.3"
   },
   "devDependencies": {
     "@nativescript/preview-cli": "1.0.2",
